@@ -15,6 +15,7 @@ emailRoutes.post("/send", (req, res) => {
     textTitle,
     body,
     callback: (response) => {
+      console.log("Sent email to " + userEmail);
       res.status(200).json({ ...response });
     },
   });
