@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const env = require("dotenv");
 
-const emailApi = require("./src/api/email");
+const emailApi = require("./api/email");
 
 //configure env
 env.config();
